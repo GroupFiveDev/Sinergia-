@@ -1,8 +1,12 @@
 import Footer from "../../footer/Footer"
+import NavBar from "../../navbar/Navbar";
 
 const Home = () => {
-    return(
-        <div><Footer/></div>
+    return (
+        <div>
+            <NavBar />
+            <Footer />
+        </div>
     )
 }
 
