@@ -1,0 +1,35 @@
+.grey {
+  background-color: grey;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.m-vh-10 {
+  min-height: 10vh;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.gap-2 {
+  gap: 2px;
+}
