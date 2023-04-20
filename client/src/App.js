@@ -4,14 +4,19 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 //components
 import Home from "./components/views/home/Home";
-import QuienesSomos from "./components/views/quienesSomos/QuienesSomos";
+import MisionYVision from "./components/views/quienesSomos/misionYVision/MisionYVision";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/quienes-somos" element={<QuienesSomos />} />
+        <Route path="/mision-y-vision" element={<MisionYVision />} />
+        <Route
+          path="/alianzas-estrategicas"
+          element={<AlianzasEstrategicas />}
+        />
+        <Route path="/nuestros-logros" element={<NuestrosLogros />} />
       </Routes>
     </div>
   );
