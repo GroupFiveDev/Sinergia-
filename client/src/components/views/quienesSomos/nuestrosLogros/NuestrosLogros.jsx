@@ -1,4 +1,4 @@
-const AlianzasEstrategicas = () => {
+const NuestrosLogros = () => {
     return(
         <div>
             Nuestros logros
@@ -6,4 +6,4 @@ const AlianzasEstrategicas = () => {
     )
 }
 
-export default AlianzasEstrategicas;
+export default NuestrosLogros;
