@@ -5,6 +5,8 @@ import "./App.css";
 //components
 import Home from "./components/views/home/Home";
 import MisionYVision from "./components/views/quienesSomos/misionYVision/MisionYVision";
+import AlianzasEstrategicas from "./components/views/quienesSomos/alianzasEstratégicas/AlianzasEstrategicas";
+import NuestrosLogros from "./components/views/quienesSomos/nuestrosLogros/NuestrosLogros";
 
 function App() {
   return (
