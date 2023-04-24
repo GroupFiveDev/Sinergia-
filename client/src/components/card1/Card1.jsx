@@ -1,8 +1,15 @@
-const Card1 = () => {
+import s from "./Card1.module.css";
+
+const Card1 = ({title, image, text}) => {
     return (
-        <div>
-            <div>texto</div>
-            <div>imagen</div>
+        <div className={s.container}>
+            <div className={s.text}>
+                <div><h1>{title}</h1></div>
+                <div><p>{text}</p></div>
+            </div>
+            <div className={s.image}>
+                <div><img src={image} alt={title} /></div>
+            </div>
         </div>
     )
 }
