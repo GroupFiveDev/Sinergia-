@@ -1,9 +1,15 @@
 import { AiFillInstagram, AiOutlineTwitter, AiFillFacebook } from 'react-icons/ai';
+import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
 
+  const navigate = useNavigate()
   const screenWidth = screen.width
   console.log(screenWidth);
+
+  const handleClick = (route) => {
+    navigate(route)
+  }
 
   return (
     <>
@@ -28,7 +34,7 @@ export default function NavBar() {
                   Quienes somos
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a className="dropdown-item" href="#">Mision y vision</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={() => handleClick("/mision-y-vision")}>Mision y vision</a></li>
                   <li><a className="dropdown-item" href="#">Nuestros logros</a></li>
                   <li><a className="dropdown-item" href="#">Responsabilidad social empresarial</a></li>
                   <li><a className="dropdown-item" href="#">Alianzas estratégicas</a></li>
