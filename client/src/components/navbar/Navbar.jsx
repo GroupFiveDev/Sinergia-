@@ -35,10 +35,10 @@ export default function NavBar() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a className="dropdown-item" href="#" onClick={() => handleClick("/mision-y-vision")}>Mision y vision</a></li>
-                  <li><a className="dropdown-item" href="#">Nuestros logros</a></li>
-                  <li><a className="dropdown-item" href="#">Responsabilidad social empresarial</a></li>
-                  <li><a className="dropdown-item" href="#">Alianzas estratégicas</a></li>
-                  <li><a className="dropdown-item" href="#">Régimen Tributario Especial</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={() => handleClick("/nuestros-logros")}>Nuestros logros</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={() => handleClick("/responsabilidad-social-empresarial")}>Responsabilidad social empresarial</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={() => handleClick("/alianzas-estrategicas")}>Alianzas estratégicas</a></li>
+                  <li><a className="dropdown-item" href="#" onClick={() => handleClick("/regimen-tributario-especial")}>Régimen Tributario Especial</a></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
