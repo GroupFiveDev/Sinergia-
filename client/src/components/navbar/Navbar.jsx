@@ -1,5 +1,7 @@
 import { AiFillInstagram, AiOutlineTwitter, AiFillFacebook } from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/NOMBRE NUEVO 2.png"
+import s from "./Navbar.module.css"
 
 export default function NavBar() {
 
@@ -13,21 +15,22 @@ export default function NavBar() {
 
   return (
     <>
-      <div className={`flex flex-end ${screenWidth < 1920 ? "hidden" : ""} p-10 gap-2 violet`}>
+      <div className={`flex flex-end ${screenWidth < 1920 ? "hidden" : ""} p-10 gap-2 white`}>
         <AiFillInstagram />
         <AiOutlineTwitter />
         <AiFillFacebook />
       </div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light p-0 m-vh-10">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">(Icono de la pagina)</a>
+          {/* <a className="navbar-brand" href="#">(Icono de la pagina)</a> */}
+          <img src={logo} alt="logo" className={s.logo}/>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse flex-end" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#">Inicio</a>
+                <a className="nav-link" href="#" onClick={() => handleClick("/")}>Inicio</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
