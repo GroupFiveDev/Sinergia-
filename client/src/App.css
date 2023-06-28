@@ -1,3 +1,10 @@
 body{
     background-image: linear-gradient(to right top, #f5f5f5, #ece2f7, #edccf1, #f5b4e3, #ff99cc);
+    /* font-family: 'Alegreya Sans SC', sans-serif; */
+    /* font-family: 'Exo 2', sans-serif; */
+    /* font-family: 'Play', sans-serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: 'Russo One', sans-serif; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-family: 'Varela Round', sans-serif;
 }
